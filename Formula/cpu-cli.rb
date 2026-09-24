@@ -1,25 +1,25 @@
 class CpuCli < Formula
   desc "A modern, pretty CPU viewer: see what silicon you are actually running"
   homepage "https://github.com/priyansh-anand/cpu-cli"
-  version "0.1.0"
+  version "2.0.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/priyansh-anand/cpu-cli/releases/download/v0.1.0/cpu-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "05f7d21f5e1dc35977af0d1ec1d27c8a59936ef6ad1f98b31a2883318786e144"
+      url "https://github.com/priyansh-anand/cpu-cli/releases/download/v2.0.0/cpu-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "bc9dfad3f45a2870bb60d499c82fb967dda87d3d5f2f2b642362ca0bad7f00b3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/priyansh-anand/cpu-cli/releases/download/v0.1.0/cpu-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "7cd03f291c12b9016da936baf9408b6426989181a764c60908da7a71a5554efd"
+      url "https://github.com/priyansh-anand/cpu-cli/releases/download/v2.0.0/cpu-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "f9eab4f218f40bed65f19f8302ed70d114296015373f7d61d25228425c75149f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/priyansh-anand/cpu-cli/releases/download/v0.1.0/cpu-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "c3a3febf4b4690f7e7897bd40c32a9b34dbff26bb1b72b02240d8ee4d4274205"
+      url "https://github.com/priyansh-anand/cpu-cli/releases/download/v2.0.0/cpu-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "f91d48f11fe43add2bc4074616a237812dded970c1a3335261a10bcd91481aac"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/priyansh-anand/cpu-cli/releases/download/v0.1.0/cpu-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "11ba60298de5e96503a19061f25c20b8b5a572e23faf18af5309b097bacf4225"
+      url "https://github.com/priyansh-anand/cpu-cli/releases/download/v2.0.0/cpu-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "a337eb8697da9b327748a52af5d20b9ef37e0112056cd13935bc21ead1d63230"
     end
   end
   license "GPL-3.0-or-later"
